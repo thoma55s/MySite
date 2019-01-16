@@ -18,7 +18,9 @@
 .dropdown-menu {
     background-color: #1e1e1e !important;
 }
-
+.error {
+    background: black;
+}
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
