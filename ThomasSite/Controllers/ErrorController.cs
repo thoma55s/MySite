@@ -11,5 +11,10 @@ namespace ThomasSite.Controllers
             Response.StatusCode = NotFoundCode404;
             return View();
         }
+        public ActionResult InternalError500()
+        {
+            Response.StatusCode = InternalErrorCode500;
+            return View();
+        }
     }
 }

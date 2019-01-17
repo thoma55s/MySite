@@ -12,13 +12,15 @@
     padding-right: 15px;
 }
 .navbar {
-    background-color: #1e1e1e;
+    background-color: #3f4246;
     color: white !important;
 }
 .dropdown-menu {
-    background-color: #1e1e1e !important;
+    background-color: #3f4246 !important;
 }
-.error {
+
+#error {
+    background-color: black !important;
     background: black;
 }
 

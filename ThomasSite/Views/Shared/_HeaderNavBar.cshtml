@@ -1,26 +1,22 @@
 ﻿<nav class="navbar navbar-expand-lg fixed-top">
-    <a class="navbar-brand" href="#">Thomas M. Sager</a>
+    <a class="navbar-brand">@Html.ActionLink("Thomas M. Sager", "Index", "Home", null, new { @class = "navbar-brand" })</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                @Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "nav-link" })
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="https://github.com/thoma55s">GitHub</a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/thomas-sager-5b94a5150/">LinkedIn</a>
+                    <a class="dropdown-item" href="mailto:thomas.morgan.sager@gmail.com">Email Me</a>
                 </div>
             </li>
         </ul>

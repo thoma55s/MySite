@@ -8,5 +8,10 @@ namespace ThomasSite.Controllers
         {
             return View();
         }
+
+        public ViewResult Resume()
+        {
+            return View();
+        }
     }
 }
