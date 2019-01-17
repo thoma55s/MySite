@@ -23,6 +23,13 @@
     background-color: black !important;
     background: black;
 }
+#resume {
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
+}
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,

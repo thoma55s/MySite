@@ -7,15 +7,37 @@ namespace ThomasSite.App_Start
         public static void RegisterBundles(BundleCollection bundles)
         {
             #if DEBUG                         
-                bundles.UseCdn = false;
-                BundleTable.EnableOptimizations = false;
-            #else
                 bundles.UseCdn = true;
                 BundleTable.EnableOptimizations = true;
-                bundles.Add(new ScriptBundle("~/bundles/jquery", "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js").Include(
-                        "~/Scripts/jquery-3.3.1.js"));
+                //Styles
+                Styles(bundles);
+                bundles.Add(new StyleBundle("~/bundles/fontawesome", "https://use.fontawesome.com/releases/v5.3.1/css/all.css"));
+
+                //Scripts
+                bundles.Add(new ScriptBundle("~/bundles/jquery").Include("~/Scripts/jquery-3.3.1.js"));
+                bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.js"));
+
+
+            #else
+            bundles.UseCdn = true;
+                BundleTable.EnableOptimizations = true;
+                //Styles
+                Styles(bundles);
+                
+
+                //Scripts
+                bundles.Add(new ScriptBundle("~/bundles/jquery", "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"));
+                bundles.Add(new ScriptBundle("~/bundles/bootstrap", "https://ajax.aspnetcdn.com/ajax/bootstrap/4.0.0/bootstrap.min.js"));
+                
             #endif
 
+
+
+        }
+        static void Styles(BundleCollection bundles)
+        {
+            bundles.Add(new StyleBundle("~/bundles/css").Include("~/Content/Site.css", "~/Content/bootstrap.css"));
+            bundles.Add(new StyleBundle("~/bundles/fontawesome", "https://use.fontawesome.com/releases/v5.3.1/css/all.css"));
         }
     }
 }
