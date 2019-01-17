@@ -5,7 +5,8 @@
 }
 
 /* Set padding to keep content from hitting the edges */
-.body-content {    
+.body-content {
+    float: left;
     background-color: #7289da;
     color: white;
     padding-left: 15px;
