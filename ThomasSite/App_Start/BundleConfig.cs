@@ -6,11 +6,11 @@ namespace ThomasSite.App_Start
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            #if DEBUG                         
-                bundles.UseCdn = true;
-                BundleTable.EnableOptimizations = true;
-                //Styles
-                Styles(bundles);
+            bundles.UseCdn = true;
+            BundleTable.EnableOptimizations = true;
+            #if DEBUG
+            //Styles
+            Styles(bundles);
                 bundles.Add(new StyleBundle("~/bundles/fontawesome", "https://use.fontawesome.com/releases/v5.3.1/css/all.css"));
 
                 //Scripts
@@ -18,9 +18,7 @@ namespace ThomasSite.App_Start
                 bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.js"));
 
 
-            #else
-            bundles.UseCdn = true;
-                BundleTable.EnableOptimizations = true;
+            #else            
                 //Styles
                 Styles(bundles);
                 
