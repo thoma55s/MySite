@@ -13,5 +13,10 @@ namespace ThomasSite.Controllers
         {
             return View();
         }
+
+        public ViewResult Acm()
+        {
+            return View();
+        }
     }
 }

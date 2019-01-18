@@ -28,6 +28,7 @@ namespace ThomasSite.App_Start
                 bundles.Add(new ScriptBundle("~/bundles/bootstrap", "https://ajax.aspnetcdn.com/ajax/bootstrap/4.0.0/bootstrap.min.js"));
                 
             #endif
+            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include("~/Scripts/modernizr-*"));
 
 
 

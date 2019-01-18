@@ -1,14 +1,13 @@
 ﻿body {
     padding-top: 100px;
     padding-bottom: 20px;
-    background-color: #7289da !important;
+    background-color: black !important;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    float: left;
-    background-color: #7289da;
-    color: white;
+    background-color: #1e1e1e;
+    color: #F8F8FF;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -18,6 +17,9 @@
 }
 .dropdown-menu {
     background-color: #3f4246 !important;
+}
+.nav-item {
+    padding-top: 4px;
 }
 
 #error {
@@ -31,6 +33,14 @@
     top: 0px;
     left: 0px;
 }
+#front-image {
+    height: 250px;
+    width: 250px;
+}
+#portrait {
+    height: 250px;
+    width: 250px;
+}
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
@@ -40,5 +50,8 @@ textarea {
 }
 a {
     color: white !important;
+    font-weight: bold;
 }
+
+
 
