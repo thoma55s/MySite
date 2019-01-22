@@ -8,8 +8,6 @@
 .body-content {
     background-color: #1e1e1e;
     color: #F8F8FF;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 .navbar {
     background-color: #3f4246;
@@ -18,9 +16,16 @@
 .dropdown-menu {
     background-color: #3f4246 !important;
 }
+.dropdown-item {
+    
+}
 .nav-item {
     padding-top: 4px;
 }
+.page {
+    padding-top: 30px;
+}
+
 
 #error {
     background-color: black !important;
@@ -34,12 +39,12 @@
     left: 0px;
 }
 #front-image {
-    height: 250px;
-    width: 250px;
+    height: 40vh;
+    width: 40vh;
 }
 #portrait {
-    height: 250px;
-    width: 250px;
+    height: 40vh;
+    width: 40vh;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
