@@ -1,10 +1,19 @@
-﻿<nav class="navbar navbar-expand-lg fixed-top">
-    <div>
-        <a class="navbar-brand">@Html.ActionLink("Thomas M. Sager", "Index", "Home", null, new { @class = "navbar-brand" })</a>
-    </div>
-    <div>
-        <div class="d-none d-sm-block">
-            <ul class="navbar-nav">
+﻿<div class="navbar navbar-expand-lg fixed-top">
+    
+        @Html.ActionLink("Thomas M. Sager", "Index", "Home", null, new { @class = "navbar-brand" })
+        <div class="navbar-header">
+
+            <button type="button" class="d-lg-none" data-toggle="collapse" data-target=".navbar-collapse">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
                 <li class="nav-item">
                     @Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "nav-link" })
                 </li>
@@ -29,29 +38,5 @@
                 </li>
             </ul>
         </div>
-        <div class="d-block d-sm-none">
-            <ul class="navbar-nav">  
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Information
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">                                
-                        @Html.ActionLink("---Resume", "Resume", "Home", null, new { @class = "dropdown-item" })
-                        <a class="dropdown-item" href="https://github.com/thoma55s">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </a>
-                        <a class="dropdown-item" href="https://www.linkedin.com/in/thomas-sager-5b94a5150/">
-                            <i class="fab fa-linkedin icon-card"></i>
-                            LinkedIn
-                        </a>
-                        <a class="dropdown-item" href="mailto:thomas.morgan.sager@gmail.com">
-                            <i class="far fa-envelope icon-card"></i>
-                            Email Me
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    
+</div>

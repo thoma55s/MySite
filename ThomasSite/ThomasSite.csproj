@@ -160,6 +160,7 @@
     <Content Include="Content\bootstrap\_responsive-utilities.scss" />
     <Content Include="Content\bootstrap\_responsive-embed.scss" />
     <Content Include="Content\bootstrap\_progress-bars.scss" />
+    <Content Include="Content\Files\Resume.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

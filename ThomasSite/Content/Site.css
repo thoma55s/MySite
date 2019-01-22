@@ -42,10 +42,7 @@
     height: 40vh;
     width: 40vh;
 }
-#portrait {
-    height: 40vh;
-    width: 40vh;
-}
+
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
@@ -55,7 +52,8 @@ textarea {
 }
 a {
     color: white !important;
-    font-weight: bold;
+    font-family: sans-serif !important;
+    
 }
 
 
