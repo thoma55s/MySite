@@ -16,7 +16,7 @@ namespace ThomasSite.App_Start
                 //Scripts
                 bundles.Add(new ScriptBundle("~/bundles/jquery").Include("~/Scripts/jquery-3.3.1.js"));
                 bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.js"));
-
+                bundles.Add(new ScriptBundle("~/bundles/googleHelper").Include("~/Scripts/GoogleAnalyticsModule.js"));
 
             #else            
                 //Styles
