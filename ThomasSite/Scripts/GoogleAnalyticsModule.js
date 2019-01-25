@@ -4,7 +4,7 @@
             $('#resumeButton').on("click", function () {
                 console.log("BUTTON CLICKED!");
                 var path = location.pathname + "/onClick"
-                ga('send', 'pageview', path);
+                ga('send', 'event', path);
             });
         }
     }
