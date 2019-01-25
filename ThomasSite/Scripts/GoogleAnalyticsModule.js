@@ -1,11 +1,11 @@
 ﻿var googleHelper = (function ($) {
-    //var module = {
-    //    onReady: function () {
+    var module = {
+        onReady: function () {
             $('#resumeButton').on("click", function () {
                 console.log("BUTTON CLICKED!");
-                ga('send', 'pageview', 'resume/onClick');
+                ga('send', 'pageview', 'Resume/onClick');
             });
-    //    }
-    //}
-    //return module;
+        }
+    }
+    return module;
 })(jQuery);
