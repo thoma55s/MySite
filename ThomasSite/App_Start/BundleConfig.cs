@@ -8,9 +8,10 @@ namespace ThomasSite.App_Start
         {
             bundles.UseCdn = true;
             BundleTable.EnableOptimizations = true;
+            bundles.Add(new StyleBundle("~/bundles/css").Include("~/Content/Site.css", "~/Content/bootstrap.css"));
+            bundles.Add(new StyleBundle("~/bundles/fontawesome", "https://use.fontawesome.com/releases/v5.3.1/css/all.css"));
             #if DEBUG
             //Styles
-            Styles(bundles);
                 bundles.Add(new StyleBundle("~/bundles/fontawesome", "https://use.fontawesome.com/releases/v5.3.1/css/all.css"));
 
                 //Scripts
@@ -19,8 +20,7 @@ namespace ThomasSite.App_Start
                 
 
             #else            
-                //Styles
-                Styles(bundles);
+            
                 
 
                 //Scripts
@@ -29,15 +29,9 @@ namespace ThomasSite.App_Start
                 
             #endif
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include("~/Scripts/modernizr-*"));
-
-
-
-        }
-        static void Styles(BundleCollection bundles)
-        {
-            bundles.Add(new StyleBundle("~/bundles/css").Include("~/Content/Site.css", "~/Content/bootstrap.css"));
-            bundles.Add(new StyleBundle("~/bundles/fontawesome", "https://use.fontawesome.com/releases/v5.3.1/css/all.css"));
             bundles.Add(new ScriptBundle("~/bundles/googleHelper").Include("~/Scripts/GoogleAnalyticsModule.js"));
+
+
         }
     }
 }

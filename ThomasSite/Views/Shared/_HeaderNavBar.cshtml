@@ -1,48 +1,50 @@
 ﻿<div class="navbar navbar-expand-lg fixed-top">
-    
-        @Html.ActionLink("Thomas M. Sager", "Index", "Home", null, new { @class = "navbar-brand" })
-        <div class="navbar-header">
 
-            <button type="button" class="d-lg-none" data-toggle="collapse" data-target=".navbar-collapse">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+    @Html.ActionLink("Thomas M. Sager", "Index", "Home", null, new { @class = "navbar-brand" })
+    <div class="navbar-header">
 
-        </div>
+        <button type="button" class="d-lg-none" data-toggle="collapse" data-target=".navbar-collapse">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
 
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
-                    @Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "nav-link", @id = "resumeButton"})
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Contact
+    </div>
+
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                @Html.ActionLink("Resume", "Resume", "Home", null, new { @class = "nav-link", @id = "resumeButton" })
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://github.com/thoma55s" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="https://github.com/thoma55s">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </a>
-                        <a class="dropdown-item" href="https://www.linkedin.com/in/thomas-sager-5b94a5150/">
-                            <i class="fab fa-linkedin icon-card"></i>
-                            LinkedIn
-                        </a>
-                        <a class="dropdown-item" href="mailto:thomas.morgan.sager@gmail.com">
-                            <i class="far fa-envelope icon-card"></i>
-                            Email Me
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/thomas-sager-5b94a5150/" target="_blank">
+                        <i class="fab fa-linkedin icon-card"></i>
+                        LinkedIn
+                    </a>
+                    <a class="dropdown-item" href="mailto:thomas.morgan.sager@gmail.com">
+                        <i class="far fa-envelope icon-card"></i>
+                        Email Me
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
 </div>
 
-<script>
-    (function (helper){
-        helper.onReady();
-    })(googleHelper)
-</script>
+@section PageScripts{
+    <script>
+        (function (helper) {
+            helper.onReady();
+        })(googleHelper)
+    </script>
+}
