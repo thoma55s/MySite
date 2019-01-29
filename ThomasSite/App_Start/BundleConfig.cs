@@ -9,6 +9,9 @@ namespace ThomasSite.App_Start
             bundles.UseCdn = true;
             BundleTable.EnableOptimizations = true;
             bundles.Add(new StyleBundle("~/bundles/css").Include("~/Content/Site.css", "~/Content/bootstrap.css"));
+            bundles.Add(new StyleBundle("~/bundles/Resume").Include("~/Content/Resume.css"));
+            bundles.Add(new StyleBundle("~/bundles/Home").Include("~/Content/Home.css"));
+            bundles.Add(new StyleBundle("~/bundles/Error").Include("~/Content/Error.css"));
             bundles.Add(new StyleBundle("~/bundles/fontawesome", "https://use.fontawesome.com/releases/v5.3.1/css/all.css"));
             #if DEBUG
             //Styles

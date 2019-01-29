@@ -9,6 +9,7 @@
 
 
     @Styles.Render("~/bundles/css")
+    
     @Styles.Render("~/bundles/fontawesome")
 
 
@@ -49,7 +50,11 @@
         ga('create', 'UA-133022484-1', 'auto');
     </script>
     <!-- End Google Analytics -->
-    @RenderSection("PageScripts")
+    <script>
+        (function (helper) {
+            helper.onReady();
+        })(googleHelper)
+    </script>
 </body>
 </html>
 

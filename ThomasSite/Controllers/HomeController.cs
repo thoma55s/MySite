@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web;
+using System.Web.Mvc;
 
 namespace ThomasSite.Controllers
 {
@@ -19,5 +21,11 @@ namespace ThomasSite.Controllers
         {
             return View();
         }
+        [Route("test")]
+        public ViewResult test()
+        {
+            throw new HttpException(500, "500");
+        }
+        
     }
 }

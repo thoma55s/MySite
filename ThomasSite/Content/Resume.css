@@ -1,2 +1,7 @@
-﻿body {
+﻿.resume {
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
 }

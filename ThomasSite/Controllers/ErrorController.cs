@@ -1,19 +1,14 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 
 namespace ThomasSite.Controllers
 {
     public class ErrorController : Controller
     {
-        private const int NotFoundCode404 = 404;
-        private const int InternalErrorCode500 = 500;
-        public ActionResult NotFound404()
+        public ActionResult Error(int statusCode)
         {
-            Response.StatusCode = NotFoundCode404;
-            return View();
-        }
-        public ActionResult InternalError500()
-        {
-            Response.StatusCode = InternalErrorCode500;
+            Response.StatusCode = statusCode;
+            ViewBag.StatusCode = statusCode + "";
             return View();
         }
     }
